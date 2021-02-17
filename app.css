@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./dist/tailwind.css");
+
+/* npx tailwindcss-cli@latest build app.css -o ./dist/tailwind.css */
+
+@font-face {
+    font-family:ProximaNova;
+    src: url(./fonts/ProximaNovaRegular.otf);
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(./fonts/ProximaNovaBold.otf);
+    font-weight: bold;
+  }
+@font-face {
+    font-family: SourceSansPro;
+    src: url(./fonts/SourceSansProRegular.ttf);
+    font-weight: normal;
+  }
+@font-face {
+    font-family: SourceSansPro;
+    src: url(./fonts/SourceSansProBold.ttf);
+    font-weight: bold;
+  }
+
+/******** HEADER ********/
+
+header{
+    background: url("./images/bg.png") bottom center no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+.dropdown-content {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.burger:hover .burger-content {
+    display: block;
+}
+
+#featured{
+    background: url("./images/circle.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+/******** SECOND CONTAINER********/
+
+
+#second{
+    background: url("./images/bgpage2.png")bottom center no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+ #second li:before{
+     content: url("./images/dot.svg");
+    margin-right: 1px;
+}
+
+/******** THIRD CONTAINER********/
+
+#third_container a:before{
+    content: url("./images/minus.svg");
+    margin-right: 5px;
+}
+
+
+
+/******** FORM CONTAINER********/
+
+#telephone{
+    background-image: url("./images/tel-icon.svg");
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+}
+
+#email{
+    background-image: url("./images/msg-icon.svg");
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+} 
+
+/******** FOOTER ********/
